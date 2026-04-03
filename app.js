@@ -1,4 +1,4 @@
- let display = document.getElementById('display');
+const display = document.getElementById('display');
 
   function append(value) {
     if (display.innerText === '0') {
@@ -23,3 +23,16 @@
       display.innerText = 'Error';
     }
   }
+
+  // Keyboard support
+  document.addEventListener('keydown', (e) => {
+    if (!isNaN(e.key) || ['+', '-', '*', '/', '.'].includes(e.key)) {
+      append(e.key);
+    } else if (e.key === 'Enter') {
+      calculate();
+    } else if (e.key === 'Backspace') {
+      deleteLast();
+    } else if (e.key === 'Escape') {
+      clearDisplay();
+    }
+  });
