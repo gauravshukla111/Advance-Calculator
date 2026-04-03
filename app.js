@@ -51,6 +51,7 @@ function toggleHistory(){
 }
 
 
+
 window.addEventListener('keydown', (e)=>{
   if(!isNaN(e.key) || ['+','-','*','/','.'].includes(e.key)) append(e.key);
   else if(e.key==='Enter') calculate();
