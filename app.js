@@ -47,11 +47,10 @@ function toggleTheme(){
 }
 
 function toggleHistory(){
-  sidebar.classList.toggle('hidden');
-  sidebar.classList.add('slide-in');
+  sidebar.classList.toggle('active');
 }
 
-// Keyboard support
+
 window.addEventListener('keydown', (e)=>{
   if(!isNaN(e.key) || ['+','-','*','/','.'].includes(e.key)) append(e.key);
   else if(e.key==='Enter') calculate();
