@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn-press:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black flex items-center justify-center h-screen">
+
+  <div class="bg-gray-800 p-6 rounded-3xl shadow-2xl w-80">
+    <div id="display" class="bg-black text-green-400 text-right text-3xl p-4 rounded-xl mb-4 overflow-x-auto">0</div>
+
+    <div class="grid grid-cols-4 gap-3">
+      <button onclick="clearDisplay()" class="btn-press col-span-2 bg-red-500 p-3 rounded-xl">C</button>
+      <button onclick="deleteLast()" class="btn-press bg-yellow-500 p-3 rounded-xl">⌫</button>
+      <button onclick="append('/')" class="btn-press bg-blue-500 p-3 rounded-xl">÷</button>
+
+      <button onclick="append('7')" class="btn-press bg-gray-700 p-3 rounded-xl">7</button>
+      <button onclick="append('8')" class="btn-press bg-gray-700 p-3 rounded-xl">8</button>
+      <button onclick="append('9')" class="btn-press bg-gray-700 p-3 rounded-xl">9</button>
+      <button onclick="append('*')" class="btn-press bg-blue-500 p-3 rounded-xl">×</button>
+
+      <button onclick="append('4')" class="btn-press bg-gray-700 p-3 rounded-xl">4</button>
+      <button onclick="append('5')" class="btn-press bg-gray-700 p-3 rounded-xl">5</button>
+      <button onclick="append('6')" class="btn-press bg-gray-700 p-3 rounded-xl">6</button>
+      <button onclick="append('-')" class="btn-press bg-blue-500 p-3 rounded-xl">−</button>
+
+      <button onclick="append('1')" class="btn-press bg-gray-700 p-3 rounded-xl">1</button>
+      <button onclick="append('2')" class="btn-press bg-gray-700 p-3 rounded-xl">2</button>
+      <button onclick="append('3')" class="btn-press bg-gray-700 p-3 rounded-xl">3</button>
+      <button onclick="append('+')" class="btn-press bg-blue-500 p-3 rounded-xl">+</button>
+
+      <button onclick="append('0')" class="btn-press col-span-2 bg-gray-700 p-3 rounded-xl">0</button>
+      <button onclick="append('.')" class="btn-press bg-gray-700 p-3 rounded-xl">.</button>
+      <button onclick="calculate()" class="btn-press bg-green-500 p-3 rounded-xl">=</button>
+    </div>
+  </div>
+
+<script src="app.js">
+ 
+</script>
+
+</body>
+</html>
