@@ -2,16 +2,10 @@
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Tech](https://img.shields.io/badge/tech-HTML%20%7C%20Tailwind%20%7C%20JS-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 ![Responsive](https://img.shields.io/badge/responsive-yes-orange)
 
+
 🔗 **Live Demo:** https://advance-calculator-app.netlify.app/
-
----
-
-## 🎥 Demo Preview
-
-![Calculator Demo](https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif)
 
 ---
 
@@ -90,9 +84,3 @@ This project is deployed on **Netlify**.
 ## 👨‍💻 Author
 
 Made with ❤️ by **Gaurav Shukla**
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
