@@ -1,5 +1,5 @@
 const display = document.getElementById('display');
-const historyList = document.getElementById('history');
+const historyList = document.getElementById('history'); 
 const sidebar = document.getElementById('sidebar');
 
 const sound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
